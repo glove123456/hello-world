@@ -1,0 +1,148 @@
+/*背景*/
+::-webkit-scrollbar-track-piece{
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:0;
+}
+/*宽高*/
+::-webkit-scrollbar{
+	width:1px;
+	height:1px;
+}
+/*宽高*/
+::-webkit-scrollbar-thumb{
+	height:50px;
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:4px;
+	outline:2px solid rgba(0,0,0,0);;
+	outline-offset:-2px;
+	border: 2px solid rgba(0,0,0,0);;
+}
+/*悬浮*/
+::-webkit-scrollbar-thumb:hover{
+	height:50px;
+	background-color:#123;
+	-webkit-border-radius:4px;
+}
+body{
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000;
+}
+#bg{
+	position: relative;
+	margin: auto; 
+	width: 960px;
+	height: 610px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/bg.jpg);
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/house/map.png);
+}
+
+/*此处算一个模块*/
+@-webkit-keyframes liberty {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1200%;}
+}
+#america {
+	position: absolute;
+	top: 139px;
+	left: 141px;
+	width: 129px;
+	height: 343px;
+	transform: scale(0.4);
+	-webkit-animation: liberty 1100ms steps(12) infinite;
+	background: url(../img/house/gif/Liberty/129x343_12.png);
+	-webkit-animation-play-state: paused;
+}
+/****************************/
+/*此处算一个模块*/
+@-webkit-keyframes nc {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1200%;}
+}
+#nc {
+	position: absolute;
+	top: 224px;
+	left: 487px;
+	width: 224px;
+	height: 287px;
+	transform: scale(0.4);
+	-webkit-animation: nc 1100ms steps(12) infinite;
+	background: url(../img/house/gif/CNN/224x487_12.png);
+	-webkit-animation-play-state: paused;
+}
+/****************************/
+/****************************/
+/*此处算一个模块*/
+@-webkit-keyframes opera {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1000%;}
+}
+#opera {
+	position: absolute;
+	top: 224px;
+	left: 487px;
+	width: 378px;
+	height: 140px;
+	transform: scale(0.4);
+	-webkit-animation: opera 1100ms steps(10) infinite;
+	background: url(../img/house/gif/opera/378x140_10.png);
+	-webkit-animation-play-state: paused;
+}
+/****************************/
+
+@-webkit-keyframes palace {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -2100%;}
+}
+#palace {
+	position: absolute;
+	top: 224px;
+	left: 487px;
+	width: 450px;
+	height: 200px;
+	transform: scale(0.4);
+	-webkit-animation: palace 2000ms steps(21) infinite;
+	background: url(../img/house/gif/palace/425x200_21.png);
+	-webkit-animation-play-state: paused;
+}
+/****************************/
+@-webkit-keyframes taiji {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1000%;}
+}
+#taiji {
+	position: absolute;
+	top: 224px;
+	left: 487px;
+	width: 251x;
+	height: 159px;
+	transform: scale(0.4);
+	-webkit-animation: taiji 1200ms steps(21) infinite;
+	background: url(../img/house/gif/taiji/251x159_10.png);
+	-webkit-animation-play-state: paused;
+}
+/****************************/
+

@@ -1,0 +1,104 @@
+/*背景*/
+::-webkit-scrollbar-track-piece{
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:0;
+}
+/*宽高*/
+::-webkit-scrollbar{
+	width:1px;
+	height:1px;
+}
+/*宽高*/
+::-webkit-scrollbar-thumb{
+	height:50px;
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:4px;
+	outline:2px solid rgba(0,0,0,0);;
+	outline-offset:-2px;
+	border: 2px solid rgba(0,0,0,0);;
+}
+/*悬浮*/
+::-webkit-scrollbar-thumb:hover{
+	height:50px;
+	background-color:#123;
+	-webkit-border-radius:4px;
+}
+body{
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000;
+}
+#bg{
+	position: relative;
+	margin: auto; 
+	width: 960px;
+	height: 640px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 960px;
+	height: 640px;
+	background-size: 960px 640px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/animal-3/polarbg.jpg);
+}
+#tab{
+	transition:All 0.3s ease-in-out;    
+	-webkit-transition:All 0.3s ease-in-out;    
+	-moz-transition:All 0.3s ease-in-out;    
+	-o-transition:All 0.3s ease-in-out;
+	position: absolute;
+	left: 55px;
+	padding: 0px;
+	margin: 0px;
+	width: 870px;
+	height: 450px;
+	background-size: 870px 450px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/tab1.png);
+}
+#area{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 720px;
+	height: 340px;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#txt{
+	position: absolute;
+	top: 0px;
+	left: 90px;
+	display: block;
+	zoom:0.45;
+}
+#btn{
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 60px;
+	height: 420px;
+}
+#btn div{
+	width: 60px;
+	height: 105px;
+}
+#back{
+	position: absolute;
+	top: 500px;
+	left: 50px;
+	width: 75px;
+	height: 80px;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/animal-3/polarbk.png);
+}

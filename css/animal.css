@@ -1,0 +1,300 @@
+/*背景*/
+::-webkit-scrollbar-track-piece{
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:0;
+}
+/*宽高*/
+::-webkit-scrollbar{
+	width:1px;
+	height:1px;
+}
+/*宽高*/
+::-webkit-scrollbar-thumb{
+	height:50px;
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:4px;
+	outline:2px solid rgba(0,0,0,0);;
+	outline-offset:-2px;
+	border: 2px solid rgba(0,0,0,0);;
+}
+/*悬浮*/
+::-webkit-scrollbar-thumb:hover{
+	height:50px;
+	background-color:#123;
+	-webkit-border-radius:4px;
+}
+body{
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000;
+}
+#bg{
+	position: relative;
+	margin: auto; 
+	width: 960px;
+	height: 610px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/bg.jpg);
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/bg.jpg);
+}
+
+/*此处算一个模块*/
+@-webkit-keyframes whale {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1100%;}/*此处是gif有多少个图的100倍%*/
+}
+#whale {
+	position: absolute;
+	top: 140px;left: 140px;/*图片的位置*/
+	height:306px;width:454px;/*图片的高和长*/
+	transform: scale(0.25);/*图片缩放的倍数*/
+	-webkit-animation:whale 1100ms steps(11) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/whale.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes lion {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -900%;}/*此处是gif有多少个图的100倍%*/
+}
+#lion {
+	position: absolute;
+	top: 270px;left: 440px;/*图片的位置*/
+	height:313px;width:392px;/*图片的高和长*/
+	transform: scale(0.20);/*图片缩放的倍数*/
+	-webkit-animation:lion 900ms steps(9) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/lion.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+/******************************/
+@-webkit-keyframes fish {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1200%;}/*此处是gif有多少个图的100倍%*/
+}
+#puffer {
+	position: absolute;
+	top: 140px;left: 950px;/*图片的位置*/
+	height:226px;width:276px;/*图片的高和长*/
+	transform: scale(0.25);/*图片缩放的倍数*/
+	-webkit-animation:fish 900ms steps(12) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/276x226_12.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+
+@-webkit-keyframes shanghaojia {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1200%;}/*此处是gif有多少个图的100倍%*/
+}
+#shanghaojia {
+	position: absolute;
+	top: 240px;left: 90px;/*图片的位置*/
+	height:413px;width:428px;/*图片的高和长*/
+	transform: scale(0.18);/*图片缩放的倍数*/
+	-webkit-animation:shanghaojia 2000ms steps(12) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/428x413_12.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+
+@-webkit-keyframes elephant {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1700%;}/*此处是gif有多少个图的100倍%*/
+}
+#elephant{
+	position: absolute;
+	top: 85px;left: 240px;/*图片的位置*/
+	height:512px;width:800px;/*图片的高和长*/
+	transform: scale(0.15);/*图片缩放的倍数*/
+	-webkit-animation:elephant 2200ms steps(17) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/800x512_17.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+@-webkit-keyframes quirrel {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1600%;}/*此处是gif有多少个图的100倍%*/
+}
+#quirrel{
+	position: absolute;
+	top: -165px;left: -210px;/*图片的位置*/
+	height:768px;width:1039px;/*图片的高和长*/
+	transform: scale(0.08);/*图片缩放的倍数*/
+	-webkit-animation:quirrel 2500ms steps(16) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/1039x768_16.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+
+@-webkit-keyframes polo_beer {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1700%;}/*此处是gif有多少个图的100倍%*/
+}
+#polo_beer{
+	position: absolute;
+	top: -165px;left: 70px;/*图片的位置*/
+	height:417px;width:697px;/*图片的高和长*/
+	transform: scale(0.15);/*图片缩放的倍数*/
+	-webkit-animation:polo_beer 2500ms steps(17) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+	background:url(../img/animal/697x417_17.png);/*图片的位置*/
+	-webkit-animation-play-state:paused;
+}
+
+
+
+#panda{
+	position: absolute;
+	left: 890px;	
+	top: 240px;
+	width: 60px;
+	height: 75px;
+	background-size: 60px 75px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url(../img/animal/panda.png);
+}
+
+#kangroo{
+	position: absolute;
+	left: 880px;	
+	top: 420px;
+	width: 70px;
+	height: 65px;
+	background-size: 70px 65px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: url(../img/animal/kangroo.png);
+}
+
+#sheep{
+	position: absolute;
+	left: 961px;
+	top: 461px;
+	width: 65px;
+	height: 60px;
+	background-size: 65px 60px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/animal/sheep.png);
+}
+
+#beer {
+    position: absolute;
+    top: 95px;
+    left: 96px;
+    width: 93px;
+    height: 70px;
+    background-size: 93px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/beer.png);
+}
+#octopus {
+    position: absolute;
+    left: 740px;
+    top: 360px;
+    width: 48px;
+    height: 45px;
+    background-size: 48px 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/octopus.png);
+}
+#deer {
+    position: absolute;
+    left: 730px;
+    top: 60px;
+    width: 80px;
+    height: 95px;
+    background-size: 80px 95px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/deer.png);
+}
+#dolphin{
+    position: absolute;
+    left: 80px;
+    top: 390px;
+    width: 85px;
+    height: 73px;
+    background-size: 85px 73px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/dolphin.png);
+}
+
+#seal {
+    position: absolute;
+    left: 397px;
+    top: 95px;
+    width: 85px;
+    height: 55px;
+    background-size: 85px 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/seal.png);
+}
+#penuins {
+    position: absolute;
+    left: 492px;
+    top: 511px;
+    width: 52px;
+    height: 80px;
+    background-size: 52px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/penuins.png);
+}
+
+#coala {
+    position: absolute;
+    left: 1000px;
+    top: 400px;
+    width: 60px;
+    height: 65px;
+    background-size: 60px 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/coala.png);
+}
+
+#giraffe {
+    position: absolute;
+    left: 527px;
+    top: 211px;
+    width: 70px;
+    height: 116px;
+    background-size: 70px 116px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/giraffe.png);
+}
+#alpaca {
+    position: absolute;
+    left: 333px;
+    top: 344px;
+    width: 70px;
+    height: 85px;
+    background-size: 70px 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/alpaca.png);
+}

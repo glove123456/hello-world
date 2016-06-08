@@ -1,0 +1,356 @@
+/*èƒŒæ™¯*/
+::-webkit-scrollbar-track-piece{
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:0;
+}
+/*å®½é«˜*/
+::-webkit-scrollbar{
+	width:1px;
+	height:1px;
+}
+/*å®½é«˜*/
+::-webkit-scrollbar-thumb{
+	height:50px;
+	background-color:rgba(0,0,0,0);
+	-webkit-border-radius:4px;
+	outline:2px solid rgba(0,0,0,0);;
+	outline-offset:-2px;
+	border: 2px solid rgba(0,0,0,0);;
+}
+/*æ‚¬æµ®*/
+::-webkit-scrollbar-thumb:hover{
+	height:50px;
+	background-color:#123;
+	-webkit-border-radius:4px;
+}
+body{
+	zoom: 1;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000;
+}
+#bg{
+	position: relative;
+	margin: auto; 
+	width: 960px;
+	height: 610px;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/animal/bg.jpg);
+}
+#bgpart{
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	width: 1200px;
+	height: 610px;
+	background-size: 1200px 610px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/children/map.jpg);
+}
+
+/*æ­¤å¤„ç®—ä¸€ä¸ªæ¨¡å—*/
+@-webkit-keyframes asjm {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -600%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#asjm {
+	position: absolute;
+	left: 360px;
+	top: -33px;/*å›¾ç‰‡çš„ä½ç½®*/
+	height:224px;
+	width:105px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:asjm 1000ms steps(6) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/asjm/asjm.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+
+@-webkit-keyframes fg {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#fg {
+	position: absolute;
+	left: 630px;
+	top: -3px;/*å›¾ç‰‡çš„ä½ç½®*/
+	height:237px;
+	width:130px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:fg 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/fg/fg.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+
+@-webkit-keyframes hg {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#hg{
+	position: absolute;
+	left: 931px;
+	top: 47px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:128px;
+	height:239px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:hg 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/hg/hg.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes mg {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#mg{
+	position: absolute;
+	left: 140px;
+	top: 77px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:135px;
+	height:218px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:mg 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/mg/mg.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes ml {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#ml{
+	position: absolute;
+	top: 140px;left: 140px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:107;height:246px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(1);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:ml 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/ml/ml.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes mlr {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#mlr{
+	position: absolute;
+	left: 891px;
+	top: 337px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:250px;
+	height:240px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:mlr 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/mlr/mlr.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+
+@-webkit-keyframes yg{
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#yg{
+	position: absolute;
+	left: 530px;
+	top: -23px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:130px;
+	height:258px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:yg 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/yg/yg.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+
+@-webkit-keyframes els {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#els{
+	position: absolute;
+	left: 830px;
+	top: -33px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:139px;
+	height:250px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:els 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/els/els.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes nf{
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#nf{
+	position: absolute;
+	left: 550px;
+	top: 276px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:200px;height:250px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:nf 1300ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/nf/nf.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+@-webkit-keyframes mxg {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -800%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#mxg{
+	position: absolute;
+	left: 150px;
+	top: 187px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:230px;
+	height:245px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.4);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:mxg 1000ms steps(8) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/mxg/mxg.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;
+}
+/****************************/
+
+
+@-webkit-keyframes xby {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1600%;}/*æ­¤å¤„æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾çš„100å€%*/
+}
+#xby{
+	position: absolute;
+	left: 180px;
+	top: -173px;/*å›¾ç‰‡çš„ä½ç½®*/
+	width:656px;
+	height:786px;/*å›¾ç‰‡çš„é«˜å’Œé•¿*/
+	transform: scale(0.15);/*å›¾ç‰‡ç¼©æ”¾çš„å€æ•°*/
+	-webkit-animation:xby 2500ms steps(16) infinite;/*æ³¨æ„ï¼ï¼ï¼ whale æ˜¯@keyframe åŽçš„åå­— 1100ms æ˜¯é€Ÿåº¦ steps(11)æ˜¯gifæœ‰å¤šå°‘ä¸ªå›¾*/
+	background:url(../img/children/gif/xby/xby.png);/*å›¾ç‰‡çš„ä½ç½®*/
+	-webkit-animation-play-state:paused;}
+	
+	
+#aj{
+	position: absolute;
+	left: 573px;
+	top: 270px;
+	width: 35px;
+	height: 90px;
+	background-size: 35px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/aj.png);
+}
+
+#yl{
+	position: absolute;
+	left: 691px;
+	top: 247px;
+	width: 60px;
+	height: 90px;
+	background-size: 60px 86px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/yl.png);
+}
+#tg{
+	position: absolute;
+	left: 862px;
+	top: 297px;
+	width: 43px;
+	height: 110px;
+	background-size: 43px 110px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/tg.png);
+}
+
+#rb1{
+	position: absolute;
+	left: 480px;
+	top: 37px;
+	width: 43px;
+	height: 90px;
+	background-size: 43px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/rb1.png);
+}
+
+#ydl{
+	position: absolute;
+	left: 590px;
+	top: 167px;
+	width: 65px;
+	height: 90px;
+	background-size: 65px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/ydl.png);
+}
+
+#ml{
+	position: absolute;
+	left: 300px;
+	top: 437px;
+	width: 43px;
+	height: 90px;
+	background-size: 43px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/ml.png);
+}
+#yd{
+	position: absolute;
+	left: 790px;
+	top: 267px;
+	width: 50px;
+	height: 90px;
+	background-size: 50px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/yd.png);
+}
+#rb{
+	position: absolute;
+	left: 984px;
+	top: 252px;
+	width: 75px;
+	height: 95px;
+	background-size: 75px 95px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/rb.png);
+}
+#bx{
+	position: absolute;
+	left: 362px;
+	top: 317px;
+	width: 43px;
+	height: 90px;
+	background-size: 43px 90px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/bx.png);
+}
+#zg{
+	position: absolute;
+	left: 910px;
+	top: 197px;
+	width: 36px;
+	height: 92px;
+	background-size: 36px 92px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-image: url(../img/children/zg.png);
+}

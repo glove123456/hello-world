@@ -1,0 +1,6 @@
+$(function(){
+    Event();
+});
+function Event(){
+
+}

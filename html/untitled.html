@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+<title>ÎÞ±êÌâÎÄµµ</title>
+<style type="text/css">
+
+#china {
+    position: absolute;
+    left: 527px;
+    top: 211px;
+    width: 100px;
+    height: 200px;
+    background-size: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/zg.png);
+}
+#buyao{
+    position: absolute;
+    left: 300px;
+    top: 500px;
+    width: 70px;
+    height: 116px;
+    background-size: 70px 116px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/buyao.png);
+}
+
+#china2{
+    position: absolute;
+    left: 527px;
+    top: 211px;
+    width: 400px;
+    height: 400px;
+    background-size: 400px 400px;
+ display: none;
+    background-position: center;
+    background-image: url(../img/children/gif/zg/zhogguo000.gif);
+}
+
+
+</style>
+</head>
+<body>
+<div id="china"></div>
+<dic id="china2"></dic>
+<div id="buyao"></div>
+<div id="card"></div>
+
+
+<script src="./../js/jquery-1.11.3.min.js"></script>
+<script src="./../js/woshijqui.js"></script>
+<script type="text/javascript">
+
+
+$("#buyao").draggable();
+
+$(function(){
+    $("#china").droppable({
+        
+        drop:function(){
+            if(buyao.offsetTop > 211&&buyao.offsetTop < 411&&
+                buyao.offsetLeft >527&&buyao.offsetLeft <627){
+
+            $(china2).css("display","block");
+            }
+            else{}
+
+
+        }}
+    )
+});
+
+
+
+
+</script>
+</body>
+</html>

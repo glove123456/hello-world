@@ -298,17 +298,28 @@ body{
     background-position: center;
     background-image: url(../img/animal/alpaca.png);
 }
+#g1{
+	left: 303px;
+	top: 344px;
+}
+#g2{
+	   left: 593px;
+	   top: 184px;
+}
+#g3{
+	   left: 663px;
+	   top: 274px;
+}
 
-
-
-#grass{
+.grass3{
     position: absolute;
-    left: 333px;
-    top: 344px;
-    width: 70px;
-    height: 85px;
-    background-size: 70px 85px;
+   
+    width: 20px;
+    height: 25px;
+    background-size: 20px 25px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../img/animal/grass2.gif);
+    background-image: url(../img/grass3.gif);
 }
+
+

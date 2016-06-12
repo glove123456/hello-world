@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+<title>ÎÞ±êÌâÎÄµµ</title>
+<style type="text/css">
+	.tree{
+		background-image: url(../img/animal/gif/tree/xiangshu.gif);
+		width: 500px;
+		height: 400px;
+		left:0px;
+		top:0px;
+		position: relative;
+
+	}
+#squirrel{
+	position: absolute;
+	top: -165px;left: 400px;
+	height:768px;width:1039px;
+	transform: scale(0.5);
+	-webkit-animation:squirrel 2500ms steps(16) 1;
+	background:url(../img/animal/1039x768_16.png);
+	-webkit-animation-play-state:paused;
+}
+
+@-webkit-keyframes squirrel {
+	0% {background-position:0px -0%;}
+	100% {background-position:0px -1600%;}
+}
+#caocong{
+	background-image: url(../img/animal/gif/grass/caocong.gif);
+		width: 272px;
+		height: 109px;
+		left:0px;
+		top:0px;
+		position: relative;
+}
+
+
+
+	#xiangguo1{
+
+		animation :diao 1s;
+		-webkit- animation:diao 1s 1 linear;
+
+			background-image: url(../img/animal/xiangguo.png);
+		
+		width: 102px;
+		height: 107px;
+		left:500px;
+		top:350px;
+
+		position: absolute;
+				display: none;
+transform:rotate(45deg);
+z-index:800;
+		
+	}
+	#shuye{
+
+		animation :diao2 1s;
+		-webkit- animation:diao2 1s 1 linear;
+
+			background-image: url(../img/animal/shuye4.png);
+		
+		width: 100px;
+		height: 100px;
+		left:400px;
+		top:450px;
+
+		position: absolute;
+		display: none;
+transform:rotate(45deg);
+z-index:800;
+		
+	}
+#txt{
+    height:400px;
+    width:600px;
+    border:#333 solid 1px;
+	padding:5px;}
+
+	/*橡果的掉落动画*/
+@-webkit-keyframes diao{
+	0% {top:250px; transform:scale(0.5); left:300px;}
+    40%{top:350px;transform:scale(1);left:300px;transform:rotate(0deg);}
+    60%{top:330px;transform:scale(1);left:400px;transform:rotate(30deg);}
+	100%{top:350px;transform:scale(1);left:500px;transform:rotate(45deg);}
+
+}
+/****************************/
+@-webkit-keyframes diao2{
+	0% {top:400px; transform:scale(0.5); left:200px;}
+    40%{top:450px;transform:scale(1);left:200px;transform:rotate(0deg);}
+    60%{top:430px;transform:scale(1);left:300px;transform:rotate(30deg);}
+	100%{top:450px;transform:scale(1);left:400px;transform:rotate(45deg);}
+
+
+#divtest
+{
+    width: 282px;
+    border: solid 1px #ccc;
+}
+.drag
+{
+    border: solid 1px #fff;
+    background-color: Blue;
+    color:#fff;
+    cursor: move;
+    width: 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="tree"  onclick="diaoluo()"></div>
+<div id="xiangguo1"></div>
+<div id="squirrel"></div>
+<div id="caocong" onclick="diaoluo2()"></div>
+<div id="shuye" onmousedown="buchi()"></div>
+<div id="txt"><p>123123123</p></div>
+  <input type="button" value="改变颜色">
+
+<div id="divtest">
+            <div id="x" class="drag">沿x轴拖拽</div>
+            <div id="y" class="drag">沿y轴拖拽</div>
+
+
+
+
+        </div>
+
+	<script src="./../js/jquery-1.11.3.min.js"></script>
+	<script src="./../js/woshijqui.js"></script>
+ <script type="text/javascript">
+ var xiangguo1=document.getElementById("xiangguo1");
+  var shuye=document.getElementById("shuye");
+  var squirrel=document.getElementById("squirrel"); 
+
+function diaoluo(){
+    xiangguo1.style.display="block";
+}
+
+function diaoluo2(){
+    shuye.style.display="block";
+}
+function buchi(){
+
+	if(shuye.offsetLeft > 600&&shuye.offsetLeft < 1000){
+		$(squirrel).css("-webkit-transform","rotateY(180deg) scale(0.5)");
+
+    }else if(shuye.offsetLeft < 1200&shuye.offsetLeft > 1000){
+    	$(squirrel).css("-webkit-transform","rotateY(0deg) scale(0.5)");
+    }else{}
+}
+
+
+$(function(){
+    $("#squirrel").droppable({
+    	
+    	drop:function(){
+    		if(xiangguo1.offsetTop < 300&&xiangguo1.offsetLeft > 600){
+    		$(this).css('-webkit-animation-play-state','running');
+
+    		$(xiangguo1).css("display","none");
+    	    }
+    		else{}
+
+
+    	}}
+    )
+});
+$("#xiangguo1").draggable();
+$("#shuye").draggable();
+
+ </script>
+
+
+
+</body>
+</html>

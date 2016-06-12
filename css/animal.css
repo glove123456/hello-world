@@ -298,3 +298,17 @@ body{
     background-position: center;
     background-image: url(../img/animal/alpaca.png);
 }
+
+
+
+#grass{
+    position: absolute;
+    left: 333px;
+    top: 344px;
+    width: 70px;
+    height: 85px;
+    background-size: 70px 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/animal/grass2.gif);
+}

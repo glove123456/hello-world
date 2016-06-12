@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+<title>ÎÞ±êÌâÎÄµµ</title>
+<style type="text/css">
+
+#china {
+    position: absolute;
+    left: 527px;
+    top: 211px;
+    width: 80px;
+    height: 200px;
+    background-size: 80px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/zg.png);
+}
+#buyao{
+    position: relative;
+    left: 300px;
+    top: 500px;
+    width: 70px;
+    height: 116px;
+    background-size: 70px 116px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/buyao.png);
+}
+
+@-webkit-keyframes card{
+    0% {top:300px; transform:rotateY(-90deg);}
+    50% {top:300px; transform:rotateY(-90deg);}
+   100%{top:440px;transform:rotateY(0deg);}
+}
+#card{
+        animation :card 4s;
+    -webkit- animation:card 4s 50 linear;
+    position: absolute;
+    display: none;
+    left: 500px;
+    top: 400px;
+    width: 200px;
+    height: 100px;
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/1.png);
+}
+
+@-webkit-keyframes card{
+    0% {transform:rotateY(-90deg);}
+    50% { transform:rotateY(-90deg);}
+   100%{transform:rotateY(0deg);}
+}
+#card2{
+        animation :card 1s;
+    -webkit- animation:card 1s 1 linear;
+    position: absolute;
+    display: none;
+    left: 500px;
+    top: 400px;
+    width: 200px;
+    height: 100px;
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/children/2.png);
+}
+
+
+
+
+@-webkit-keyframes china2{
+    0% {background-position:0px -0%;}
+    100% {background-position:0px -1500%;}/*此处是gif有多少个图的100倍%*/
+}
+#china2{
+    display: none;
+    position: absolute;
+    left: 427px;
+    top: 111px;/*图片的位置*/
+    height:504px;width:300px;/*图片的高和长*/
+    transform: scale(0.5);/*图片缩放的倍数*/
+    -webkit-animation:china2 2500ms steps(15) 1;/*注意！！！ whale 是@keyframe 后的名字 1100ms 是速度 steps(11)是gif有多少个图*/
+    background:url(../img/children/gif/zg/zg.png);/*图片的位置*/
+    -webkit-animation-play-state:paused;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="china"></div>
+<dic id="china2"></dic>
+<div id="buyao"></div>
+<div id="card" onclick="fanye()"></div>
+<div id="card2" onclick="fanye2()"></div>
+
+
+<script src="./../js/jquery-1.11.3.min.js"></script>
+<script src="./../js/woshijqui.js"></script>
+<script type="text/javascript">
+  var card2=document.getElementById("card2"); 
+var buyao=document.getElementById("buyao"); 
+$("#buyao").draggable();
+
+function fanye(){
+    $("#card").delay(300).fadeOut();
+    $("#card2").fadeIn();
+  //  div.card2({transform:rotateY(0deg)},"slow");
+   // $("#card2").delay(300).fadeIn();
+}
+var timer = null;
+function fanye2(){
+    timer=setInterval(function(){
+    if(card2.offsetTop > 500){
+        clearInterval(timer);
+        $("#card2").fadeOut(500);
+}else{ card2.style.top = card2.offsetTop+10+'px';}
+
+},30)
+   // $("#card2").delay(300).fadeIn();
+}
+
+$(function(){
+    $("#china").droppable({
+        
+        drop:function(){
+            if(buyao.offsetTop > 211&&buyao.offsetTop < 411&&
+                buyao.offsetLeft >527&&buyao.offsetLeft <627){
+             $(china2).css("display","block");
+         $(china).css("display","none");
+             $(buyao).css("display","none");
+              $(china2).css('-webkit-animation-play-state','running');
+
+            
+             $("#card").delay(3000).fadeIn();
+             $(card).css("display","block")
+
+            }
+            else{
+                buyao.style.left = '300px';
+                buyao.style.top = '500px';
+
+
+            }
+
+
+        }}
+    )
+});
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
@@ -17,22 +17,124 @@
 
 <div id="ml" class='icon'></div>
 <div id="hg" class='icon'></div>
+
 <div id="xby" class='icon'> </div>
+
 <div id="yg" class='icon'></div>
+
 <div id="yd"></div>
+
 <div id="nf" class='icon'></div>
+
 <div id="mg" class='icon'></div>
+
 <div id="rb"></div>
+
 <div id="bx"></div>
+
+<div class='grass3' id='g1'></div>
+<div class='grass4' id='g2'></div>
+<div class="trees" id='t1'></div>
+<div class='grass3' id='g11'></div>
+<div class='grass3' id='g12'></div>
+<div class='grass4' id='g22'></div>
+<div class='grass4' id='g23'></div>
+<div class="trees" id='t2'></div>
+<div class='grass3' id='g13'></div>
+<div class='grass4' id='g24'></div>
+<div class='grass4' id='g25'></div>
+<div class="trees" id='t3'></div>
+<div class='grass4' id='g26'></div>
+<div class='grass4' id='g27'></div>
+
+
+
 <div id="els" class='icon'></div>
+
 <div id="asjm" class='icon'></div>
+
 <div id="fg" class='icon'></div>
+
 <div id="aj"></div>
+
+
+<dic id="china2"></dic>
+<div id="buyao"></div>
+<div id="dao"></div>
+<div id="alalei"></div>
+<div id="shanzi"></div>
+<div id="taidi"></div>
+<div id="card" onclick="fanye()"></div>
+<div id="card2" onclick="fanye2()"></div>
+
+
+
 
 </div>
 	</div>
 	<script src="./../js/jquery-1.11.3.min.js"></script>
 	<script src="./../js/common.js"></script>
 	<script src="./../js/children.js"></script>
+
+	<script src="./../js/woshijqui.js"></script>
+<script type="text/javascript">
+  var card2=document.getElementById("card2"); 
+var buyao=document.getElementById("buyao"); 
+$("#buyao").draggable();
+
+function fanye(){
+    $("#card").delay(300).fadeOut();
+    $("#card2").fadeIn();
+  //  div.card2({transform:rotateY(0deg)},"slow");
+   // $("#card2").delay(300).fadeIn();
+   $(china2).css("display","none");
+   $(zg).css("display","block");
+}
+var timer = null;
+function fanye2(){
+    timer=setInterval(function(){
+    if(card2.offsetTop > 500){
+        clearInterval(timer);
+        $("#card2").fadeOut(500);
+}else{ card2.style.top = card2.offsetTop+10+'px';}
+
+},30)
+   // $("#card2").delay(300).fadeIn();
+}
+
+$(function(){
+    $("#zg").droppable({
+        
+        drop:function(){
+            if(buyao.offsetTop > 197&&buyao.offsetTop < 300&&
+                buyao.offsetLeft >800&&buyao.offsetLeft <1000){
+             $(china2).css("display","block");
+         $(zg).css("display","none");
+             $(buyao).css("display","none");
+              $(china2).css('-webkit-animation-play-state','running');
+
+            
+             $("#card").delay(3000).fadeIn();
+             $(card).css("display","block")
+
+            }
+            else{
+                buyao.style.left = '750px';
+                buyao.style.top = '535px';
+
+
+            }
+
+
+        }}
+    )
+});
+
+
+
+
+</script>
+
+
 </body>
 </html>

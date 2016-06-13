@@ -26,9 +26,24 @@ body{
 	background-size: 960px 610px;
     background-repeat: no-repeat;
     background-position: left center;
-    background-image: url(../img/main/bg.jpg);
+    background-image: url(../img/main/back4.jpg);
 	background-color: #000;
 }
+
+	#logo1{
+
+		-webkit-animation:logogif 4s infinite linear ;
+			position: absolute;
+	top:350px;
+	left:240px; 
+	width: 492px;
+	height: 135px;
+	background-size: 492px 135px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url(../img/main/logo.png);
+
+	}
 #hover{
 	display: none;
 	position: absolute;
@@ -76,6 +91,23 @@ body{
 		-webkit-transform:scaleX(1.03); top:13px;}
 	100% {
 		-webkit-transform:scaleX(1); top:0px;}
+}
+@keyframes logogif
+{
+	0%   {
+		-webkit-transform:scaleY(1);}
+	4%  {
+		-webkit-transform:scaleY(1.1);}
+	7% 
+		{-webkit-transform:scaleY(1);}
+	11%
+		{-webkit-transform:scaleX(1);}
+	15%
+		{-webkit-transform:scaleX(1.1);}
+	20%
+		{-webkit-transform:scaleX(1);}
+	100% {
+		-webkit-transform:scaleX(1); }
 }
 .logo{
 	-webkit-animation:updwon2 1.5s infinite ease-in-out ;
